@@ -4,16 +4,15 @@
     ViewData["Title"] = "ActivityList";
 }
 
-<h1>ActivityList</h1>
+<h1>Available activities</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
             <th>Activity</th>
-            <th>Date</th></th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
             <th>Host Team</th>
             <th>Visitor Team</th>
             <th></th>
@@ -23,10 +22,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ActivityType)
+                @Html.DisplayFor(modelItem => item.Sport)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MatchDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Location)
@@ -38,9 +40,7 @@
                 @Html.DisplayFor(modelItem => item.Team2)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("AddToCalendar", "AddToCalendar", new { /* id=item.PrimaryKey */ }) 
             </td>
         </tr>
 }

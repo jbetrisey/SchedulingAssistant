@@ -5,43 +5,22 @@
 <div class="text-center">
     <h1 class="display-4">Choix des activités</h1>
 
-    <form asp-action="">
-
-        <div>
-            <label for="activity">Choisir une activité</label>
-            <select id="activity">
+    <form asp-action="ActivityList">
+        <div style="margin-top: 40px;">
+            <label for="sport">Choisir une activité : </label>
+            <select name="sport" id="activity">
                 <option value="football">Match de football</option>
                 <option value="hockey">Match de hockey</option>
             </select>
         </div>
 
-        <div>
-            <p>Choisir un intervalle de date</p>
+        <div style="margin-top: 40px; margin-bottom: 40px;">
+            <p>Choisir un intervalle de date : </p>
             <label for="startDate">Début</label>
-            <input type="date" id="startDate" />
+            <input name="startDate" type="date" id="startDate" />
             <label for="endDate">Fin</label>
-            <input type="date" id="endDate" />
+            <input name="endDate" type="date" id="endDate" />
         </div>
-
-@*        <div>
-            <label for="location">Choisir un lieu</label>
-            <select id="location">
-                <option value="Sion">Sion</option>
-                <option value="Sierre">Sierre</option>
-                <option value="Martigny">Martigny</option>
-                <option value="Monthey">Monthey</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="distance">Choisir une distance</label>
-            <select id="distance">
-                <option value="5">jusqu'à 5 km</option>
-                <option value="10">jusqu'à 10 km</option>
-                <option value="20">jusqu'à 20 km</option>
-                <option value="none">indifférent</option>
-            </select>
-        </div>*@
 
         <input type="submit" value="Submit">
     </form>
