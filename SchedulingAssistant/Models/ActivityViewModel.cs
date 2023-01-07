@@ -2,6 +2,7 @@
 {
     public class ActivityViewModel
     {
+        public string Sport { get; set; }
         public DateTime MatchDate { get; set; }
         public string Team1 { get; set; }
         public string Team2 { get; set; }

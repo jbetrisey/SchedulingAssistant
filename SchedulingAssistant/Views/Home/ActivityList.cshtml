@@ -4,26 +4,16 @@
     ViewData["Title"] = "ActivityList";
 }
 
-<h1>ActivityList</h1>
+<h1>Available activities</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.MatchDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Team1)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Team2)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Location)
-            </th>
+            <th>Activity</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Host Team</th>
+            <th>Visitor Team</th>
             <th></th>
         </tr>
     </thead>
@@ -31,7 +21,13 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.Sport)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.MatchDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Team1)
@@ -40,12 +36,7 @@
                 @Html.DisplayFor(modelItem => item.Team2)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("AddToCalendar", "AddToCalendar", new { /* id=item.PrimaryKey */ }) 
             </td>
         </tr>
 }
