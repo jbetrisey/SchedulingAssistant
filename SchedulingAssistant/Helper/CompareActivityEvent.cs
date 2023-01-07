@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 namespace SchedulingAssistant.Helper
 {
-    public class Compare
+    public class CompareActivityEvent
     {
         List<Activity> activities = GetActivityFromCsv("activites.csv");
 
@@ -20,7 +20,8 @@ namespace SchedulingAssistant.Helper
         List<MyCalendarEvent> myEvents;
         //myEvents = getFromGoogle
         List<Activity> compatibleActivities;
-        /* 
+       
+        /*
          foreach(Activity activity in activities){
              foreach(MyCalendarEvent myCalendarEvent in myEvents){
                  //tester que l'activité soit ok
