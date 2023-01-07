@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="events.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="events.csv">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Google.Apis.Auth.Mvc" Version="1.58.0" />
     <PackageReference Include="Google.Apis.Calendar.v3" Version="1.58.0.2759" />
     <PackageReference Include="CsvHelper" Version="30.0.1" />

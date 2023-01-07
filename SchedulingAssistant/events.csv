@@ -1,0 +1,70 @@
+Football,Premier League,2,1,2023,5:00 PM,Leicester,Fulham
+Football,Premier League,3,1,2023,10:00 PM,Manchester Utd,Bournemouth
+Football,Premier League,2,1,2023,11:24 PM,Southampton,Nottingham
+Football,Premier League,13,1,2023,5:35 PM,Manchester Utd,Manchester City
+Football,Premier League,14,1,2023,6:30 PM,Newcastle,Fulham
+Football,Premier League,15,1,2023,2:15 PM,Nottingham,Leicester
+Football,Premier League,16,1,2023,2:30 PM,Tottenham,Arsenal
+Football,Premier League,17,1,2023,6:00 PM,Wolves,West Ham
+Football,Premier League,21,1,2023,4:55 PM,Leicester,Brighton
+Football,Premier League,21,1,2023,10:45 PM,Liverpool,Chelsea
+Football,Premier League,22,1,2023,11:00 PM,Manchester City,Wolves
+Football,Premier League,23,1,2023,1:50 PM,Southampton,Aston Villa
+Football,Premier League,23,1,2023,8:00 PM,West Ham,Everton
+Football,Premier League,4,2,2023,10:30 PM,Newcastle,West Ham
+Football,Premier League,5,2,2023,6:20 PM,Nottingham,Leeds
+Football,Premier League,6,2,2023,2:46 PM,Tottenham,Manchester City
+Football,Premier League,7,2,2023,7:15 PM,Wolves,Liverpool
+Football,Premier League,11,2,2023,9:45 PM,Liverpool,Everton
+Football,Premier League,12,2,2023,7:10 PM,Manchester City,Aston Villa
+Football,Premier League,13,2,2023,7:30 PM,Southampton,Wolves
+Football,Premier League,14,2,2023,10:45 PM,West Ham,Chelsea
+Football,Premier League,18,2,2023,3:30 PM,Newcastle,Liverpool
+Football,Premier League,19,2,2023,9:15 PM,Nottingham,Manchester City
+Football,Premier League,20,2,2023,7:15 PM,Tottenham,West Ham
+Football,Premier League,21,2,2023,7:30 PM,Wolves,Bournemouth
+Football,Premier League,25,2,2023,1:00 PM,Bournemouth,Manchester City
+Football,Premier League,25,2,2023,6:00 PM,Manchester Utd,Brentford
+Football,Premier League,26,2,2023,5:15 PM,Newcastle,Brighton
+Hockey,NHL,01,01,2023,3:00 PM,Carolina Hurricanes,New Jersey Devils
+Hockey,NHL,01,01,2023,8:00 PM,New York Islanders,Seattle Kraken
+Hockey,NHL,01,02,2023,2:00 PM,Pittsburgh Penguins,Boston Bruins
+Hockey,NHL,01,02,2023,9:00 PM,Vegas Golden Knights,Colorado Avalanche
+Hockey,NHL,01,03,2023,7:00 PM,Carolina Hurricanes,New York Rangers
+Hockey,NHL,03,01,2023,8:00 PM,Calgary Flames,Winnipeg Jets
+Hockey,NHL,03,01,2023,10:30 PM,Dallas Stars,Los Angeles Kings
+Hockey,NHL,04,01,2023,7:00 PM,New Jersey Devils,Detroit Red Wings
+Hockey,NHL,04,01,2023,10:00 PM,Dallas Stars,Anaheim Ducks
+Hockey,NHL,05,01,2023,7:00 PM,Arizona Coyotes,Philadelphia Flyers
+Hockey,NHL,06,01,2023,7:00 PM,Nashville Predators,Washington Capitals
+Hockey,NHL,11,01,2023,7:00 PM,Nashville Predators,Toronto Maple Leafs
+Hockey,NHL,11,01,2023,10:30 PM,San Jose Sharks,Los Angeles Kings
+Hockey,NHL,12,01,2023,7:00 PM,Carolina Hurricanes,Columbus Blue Jackets
+Hockey,NHL,12,01,2023,10:00 PM,Florida Panthers,Vegas Golden Knights
+Hockey,NHL,13,01,2023,7:00 PM,Winnipeg Jets,Pittsburgh Penguins
+Hockey,NHL,13,01,2023,10:00 PM,New Jersey Devils,Anaheim Ducks
+Hockey,NHL,13,01,2023,10:30 PM,Edmonton Oilers,San Jose Sharks
+Hockey,NHL,14,01,2023,2:00 PM,Calgary Flames,Dallas Stars
+Hockey,NHL,14,01,2023,7:00 PM,Ottawa Senators,Colorado Avalanche
+Hockey,NHL,26,01,2023,7:00 PM,Pittsburgh Penguins,Washington Capitals
+Hockey,NHL,27,01,2023,7:00 PM,Detroit Red Wings,New York Islanders
+Hockey,NHL,27,01,2023,10:00 PM,Columbus Blue Jackets,Vancouver Canucks
+Hockey,NHL,28,01,2023,7:00 PM,San Jose Sharks,Pittsburgh Penguins
+Hockey,NHL,28,01,2023,10:00 PM,Chicago Blackhawks,Edmonton Oilers
+Hockey,NHL,29,01,2023,5:00 PM,Washington Capitals,Toronto Maple Leafs
+Hockey,NHL,30,01,2023,8:00 PM,St. Louis Blues,Winnipeg Jets
+Hockey,NHL,31,01,2023,7:00 PM,Los Angeles Kings,Carolina Hurricanes
+Hockey,NHL,01,02,2023,7:00 PM,Carolina Hurricanes,Buffalo Sabres
+Hockey,NHL,06,02,2023,9:00 PM,Minnesota Wild,Arizona Coyotes
+Hockey,NHL,07,02,2023,8:00 PM,Vegas Golden Knights,Nashville Predators
+Hockey,NHL,08,02,2023,8:30 PM,Minnesota Wild,Dallas Stars
+Hockey,NHL,09,02,2023,7:00 PM,Seattle Kraken,New Jersey Devils
+Hockey,NHL,11,02,2023,8:30 PM,Minnesota Wild,Dallas Stars
+Hockey,NHL,13,02,2023,7:00 PM,Seattle Kraken,New Jersey Devils
+Hockey,NHL,15,02,2023,7:00 PM,Seattle Kraken,New Jersey Devils
+Hockey,NHL,17,02,2023,8:30 PM,Minnesota Wild,Dallas Stars
+Hockey,NHL,20,02,2023,7:00 PM,Seattle Kraken,New Jersey Devils
+Hockey,NHL,21,02,2023,7:00 PM,Detroit Red Wings,New York Islanders
+Hockey,NHL,23,02,2023,10:00 PM,Columbus Blue Jackets,Vancouver Canucks
+Hockey,NHL,25,02,2023,7:00 PM,San Jose Sharks,Pittsburgh Penguins
+Hockey,NHL,28,02,2023,10:00 PM,Chicago Blackhawks,Edmonton Oilers

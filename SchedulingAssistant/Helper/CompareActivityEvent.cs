@@ -36,7 +36,7 @@ namespace SchedulingAssistant.Helper
         {
             var results = new List<Activity>();
 
-            var filePath = "C:\\Users\\julie\\source\\repos\\SchedulingAssistant\\SchedulingAssistant\\wwwroot\\" + fileName;
+            var filePath = fileName;
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
