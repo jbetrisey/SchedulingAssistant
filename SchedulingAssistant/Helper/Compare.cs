@@ -11,7 +11,7 @@ namespace SchedulingAssistant.Helper
         //activities = getFromCsv
         List<MyCalendarEvent> myEvents;
         //myEvents = getFromGoogle
-        List<CompatibleActivity> compatibleActivities;
+        List<Activity> compatibleActivities;
         /* 
          foreach(Activity activity in activities){
              foreach(MyCalendarEvent myCalendarEvent in myEvents){
