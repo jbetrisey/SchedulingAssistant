@@ -12,9 +12,8 @@ namespace SchedulingAssistant.Helper
 {
     public class CompareActivityEvent
     {
-        List<Activity> activities = GetActivityFromCsv("activites.csv");
+        List<Activity> activities = GetActivitiesFromCsv("events.csv");
 
-     
 
         //activities = getFromCsv
         List<MyCalendarEvent> myEvents;
@@ -33,13 +32,11 @@ namespace SchedulingAssistant.Helper
 
          */
 
-
-
-        public static List<Activity> GetActivityFromCsv(string fileName)
+        public static List<Activity> GetActivitiesFromCsv(string fileName)
         {
             List<Activity> results = null;
 
-            var filePath = "C:\\Users\\lucad\\Bureau\\TestCSV\\TestCSV\\TestCSV\\" + fileName;
+            var filePath = "\\SchedulingAssistant\\wwwroot\\" + fileName;
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
@@ -55,11 +52,8 @@ namespace SchedulingAssistant.Helper
                 using (var csv = new CsvReader(textReader, config))
                 {
                     results = (List<Activity>?)csv.GetRecords<Activity>();
-
-
                 }
             }
-
             return results;
         }
 
