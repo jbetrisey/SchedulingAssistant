@@ -1,12 +1,12 @@
-﻿using Google.Apis.Auth.AspNetCore3;
-using Google.Apis.Auth.OAuth2;
+﻿using Google.Apis.Auth.OAuth2;
+using Google.Apis.Auth.OAuth2.Flows;
+using Google.Apis.Auth.OAuth2.Mvc;
+using Google.Apis.Auth.OAuth2.Responses;
 using Google.Apis.Calendar.v3;
 using Google.Apis.Calendar.v3.Data;
-using Google.Apis.Discovery;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
-using Microsoft.AspNetCore.Mvc;
-using System.Net;
+using System.Security.Claims;
 
 namespace SchedulingAssistant.Service;
 public class GoogleCalendarServiceAgent
@@ -17,23 +17,32 @@ public class GoogleCalendarServiceAgent
 
     public GoogleCalendarServiceAgent()
     {
-        
-        _clientService = new CalendarService(new BaseClientService.Initializer
-        {
-            ApplicationName = "Scheduling Assistant",
-            HttpClientInitializer = _credential,
-            ApiKey = "AIzaSyCGKn3WvmBEzHuC9qI2J1NbgQInayxqK5E",
-        });
         _calendarId = "test";
     }
-    public async Task Run(IGoogleAuthProvider auth)
+   
+    public async Task Run()
     {
-        _credential = await auth.GetCredentialAsync();
-        CalendarListResource.ListRequest request = new CalendarListResource.ListRequest(_clientService);
+        using (var stream = new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
+        {
+            var credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+            GoogleClientSecrets.Load(stream).Secrets,
+            new[] { CalendarService.Scope.CalendarReadonly },
+            "user",
+            CancellationToken.None,
+            new FileDataStore(GoogleWebAuthorizationBroker.Folder, true));
+        
+        var initializer = new BaseClientService.Initializer()
+        {
+            HttpClientInitializer = credential,
+            ApplicationName = "ASP.NET MVC5 Calendar Sample",
+        };
+        var service = new CalendarService(initializer);
+        CalendarListResource.ListRequest request = new CalendarListResource.ListRequest(service);
 
         CalendarList calendarList= request.Execute();
 
         var test =  calendarList.Items;
+        }
     }
 
     public async Task CreateEvent(Event eventItem)
