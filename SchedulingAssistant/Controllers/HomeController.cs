@@ -29,8 +29,8 @@ namespace SchedulingAssistant.Controllers
             // TODO : Get list of all activities
             List<Activity> allActivities = new List<Activity>();
 
-            Activity a1 = new Activity() { Sport = "football", Day = 07, Month = 01, Year = 2023, League = "league", TeamAway = "Sion", TeamHome = "Lausanne", Time = TimeSpan.FromMinutes(90) };
-            Activity a2 = new Activity() { Sport = "football", Day = 08, Month = 01, Year = 2023, League = "league", TeamAway = "Sierre", TeamHome = "Martigny", Time = TimeSpan.FromMinutes(90) };
+            Activity a1 = new Activity() { Sport = "football", Day = 07, Month = 01, Year = 2023, League = "league", TeamAway = "Sion", TeamHome = "Lausanne", Time = DateTime.Now };
+            Activity a2 = new Activity() { Sport = "football", Day = 08, Month = 01, Year = 2023, League = "league", TeamAway = "Sierre", TeamHome = "Martigny", Time = DateTime.Now };
 
             allActivities.Add(a1);
             allActivities.Add(a2);
@@ -64,8 +64,8 @@ namespace SchedulingAssistant.Controllers
             activity.Location = a.League;
             activity.Team1 = a.TeamHome;
             activity.Team2 = a.TeamAway;
-            activity.MatchDate = new DateTime(a.Year, a.Month, a.Day);
-            activity.Time = a.Time;
+            TimeSpan time = a.Time.TimeOfDay;
+            activity.MatchDate = new DateTime(a.Year, a.Month, a.Day) + time;
 
             return activity;
         }
