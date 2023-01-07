@@ -19,16 +19,35 @@ namespace SchedulingAssistant.Helper
         List<MyCalendarEvent> myEvents;
         //myEvents = getFromGoogle
         List<Activity> compatibleActivities;
-       
+
         /*
-         foreach(Activity activity in activities){
-             foreach(MyCalendarEvent myCalendarEvent in myEvents){
-                 //tester que l'activité soit ok
-                    compatibleActivities.Add(activity);
+         bool isAddable = false;
 
-             }
+            foreach (Activity activity in compatibleActivities)
+            {
+                foreach (MyCalendarEvent myCalendarEvent in myEvents)
+                {
+                    if(activity.Day == myCalendarEvent.StartDate.Day)
+                    {
+                        if(myCalendarEvent.StartDate.Hour - activity.Time.Hour <= 2)
+                        {
+                            return false;
+                        }
+                        else
+                        {
+                            isAddable = true ;
+                        }
+                     
+                    }
+                    else
+                    {
+                        isAddable = true;
+                    }
+                
+                }
 
-         }
+            }
+            return true;
 
          */
 
