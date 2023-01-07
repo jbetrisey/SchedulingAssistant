@@ -2,6 +2,8 @@
 {
     public class ActivityViewModel
     {
+        public string ActivityId { get; set; }
+        public string ActivityType { get; set; }
         public DateTime MatchDate { get; set; }
         public string Team1 { get; set; }
         public string Team2 { get; set; }
