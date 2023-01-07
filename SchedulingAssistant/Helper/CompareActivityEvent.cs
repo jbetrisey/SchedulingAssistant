@@ -34,9 +34,9 @@ namespace SchedulingAssistant.Helper
 
         public static List<Activity> GetActivitiesFromCsv(string fileName)
         {
-            List<Activity> results = null;
+            var results = new List<Activity>();
 
-            var filePath = "\\SchedulingAssistant\\wwwroot\\" + fileName;
+            var filePath = "C:\\Users\\julie\\source\\repos\\SchedulingAssistant\\SchedulingAssistant\\wwwroot\\" + fileName;
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
@@ -51,7 +51,11 @@ namespace SchedulingAssistant.Helper
                 using (var textReader = new StreamReader(fs, Encoding.UTF8))
                 using (var csv = new CsvReader(textReader, config))
                 {
-                    results = (List<Activity>?)csv.GetRecords<Activity>();
+                    var test = csv.GetRecords<Activity>();
+                    foreach (var activity in test)
+                    {
+                        results.Add(activity);
+                    }
                 }
             }
             return results;
