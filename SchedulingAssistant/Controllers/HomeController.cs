@@ -26,16 +26,7 @@ namespace SchedulingAssistant.Controllers
 
         public IActionResult ActivityList(string sport, DateTime startDate, DateTime endDate)
         {
-            // TODO : Get list of all activities
             List<Activity> allActivities = Helper.CompareActivityEvent.GetActivitiesFromCsv("events.csv");
-
-
-
-            Activity a1 = new Activity() { Sport = "football", Day = 07, Month = 01, Year = 2023, League = "league", TeamAway = "Sion", TeamHome = "Lausanne", Time = DateTime.Now };
-            Activity a2 = new Activity() { Sport = "football", Day = 08, Month = 01, Year = 2023, League = "league", TeamAway = "Sierre", TeamHome = "Martigny", Time = DateTime.Now };
-
-            allActivities.Add(a1);
-            allActivities.Add(a2);
 
             List<ActivityViewModel> activitiesVM = ConvertActivityList(allActivities);
             activitiesVM = FindActivities(activitiesVM, sport, startDate, endDate);
